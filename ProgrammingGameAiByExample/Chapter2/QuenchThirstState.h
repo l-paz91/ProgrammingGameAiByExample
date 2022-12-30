@@ -6,12 +6,12 @@
 //--INCLUDES--//
 #include "State.h"
 
-class Miner;
+class BaseGameEntityMkII;
 
 // -----------------------------------------------------------------------------
 
 class QuenchThirstState
-	: public StateInterface<Miner>
+	: public StateInterface<BaseGameEntityMkII>
 {
 public:
 	QuenchThirstState(const QuenchThirstState&) = delete;
@@ -23,9 +23,9 @@ private:
 	QuenchThirstState() {}
 
 	// StateInterface
-	virtual void enter(Miner* pEntity);
-	virtual void execute(Miner* pEntity);
-	virtual void exit(Miner* pEntity);
+	virtual void enter(BaseGameEntityMkII* pEntity);
+	virtual void execute(BaseGameEntityMkII* pEntity);
+	virtual void exit(BaseGameEntityMkII* pEntity);
 	// ~StateInterface
 };
 // -----------------------------------------------------------------------------

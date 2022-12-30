@@ -90,7 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\C++\Projects\ProgrammingGameAiByExample\ProgrammingGameAiByExample\Chapter2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\C++\Projects\ProgrammingGameAiByExample\ProgrammingGameAiByExample;E:\C++\Projects\ProgrammingGameAiByExample\ProgrammingGameAiByExample\Chapter2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,15 +143,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chapter2\BaseGameEntityMkII.cpp" />
+    <ClCompile Include="Chapter2\DoShotsState.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Chapter2\EnterMineAndDigForNuggetState.cpp" />
     <ClCompile Include="Chapter2\GoHomeAndSleepTilRestedState.cpp">
       <SubType>
       </SubType>
     </ClCompile>
     <ClCompile Include="Chapter2\Miner.cpp" />
+    <ClCompile Include="Chapter2\MinersWife.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Chapter2\MinersWifeGlobalState.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Chapter2\PlayerEntities.cpp" />
     <ClCompile Include="Chapter2\QuenchThirstState.cpp" />
     <ClCompile Include="Chapter2\VisitBankAndDepositGoldState.cpp" />
+    <ClCompile Include="Chapter2\WorkAtSaloonState.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <SubType>
       </SubType>
@@ -161,6 +177,10 @@
     <ClInclude Include="Chapter2\BaseGameEntity.h" />
     <ClInclude Include="Chapter2\BaseGameEntityMkII.h" />
     <ClInclude Include="Chapter2\BaseObject.h" />
+    <ClInclude Include="Chapter2\DoShotsState.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Chapter2\EnterMineAndDigForNuggetState.h" />
     <ClInclude Include="Chapter2\EntityStateMachine.h" />
     <ClInclude Include="Chapter2\GoHomeAndSleepTilRestedState.h">
@@ -169,6 +189,14 @@
     </ClInclude>
     <ClInclude Include="Chapter2\LocationTypes.h" />
     <ClInclude Include="Chapter2\Miner.h" />
+    <ClInclude Include="Chapter2\MinersWife.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Chapter2\MinersWifeGlobalState.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Chapter2\PlayerEntities.h" />
     <ClInclude Include="Chapter2\QuenchThirstState.h">
       <SubType>
@@ -177,6 +205,10 @@
     <ClInclude Include="Chapter2\State.h" />
     <ClInclude Include="Chapter2\UniqueIdManager.h" />
     <ClInclude Include="Chapter2\VisitBankAndDepositGoldState.h" />
+    <ClInclude Include="Chapter2\WorkAtSaloonState.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="std_lib_facilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

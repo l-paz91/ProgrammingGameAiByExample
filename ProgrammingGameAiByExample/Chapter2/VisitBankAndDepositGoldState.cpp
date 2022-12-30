@@ -23,7 +23,7 @@ VisitBankAndDepositGoldState& VisitBankAndDepositGoldState::getInstance()
 
 // -----------------------------------------------------------------------------
 
-void VisitBankAndDepositGoldState::enter(Miner* pEntity)
+void VisitBankAndDepositGoldState::enter(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{
@@ -38,7 +38,7 @@ void VisitBankAndDepositGoldState::enter(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void VisitBankAndDepositGoldState::execute(Miner* pEntity)
+void VisitBankAndDepositGoldState::execute(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{
@@ -66,7 +66,7 @@ void VisitBankAndDepositGoldState::execute(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void VisitBankAndDepositGoldState::exit(Miner* pEntity)
+void VisitBankAndDepositGoldState::exit(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{

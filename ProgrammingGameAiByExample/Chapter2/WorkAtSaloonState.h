@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-#ifndef EnterMineAndDigForNuggetState_H
-#define EnterMineAndDigForNuggetState_H
+#ifndef WorkAtSaloonState_H
+#define WorkAtSaloonState_H
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
@@ -10,17 +10,17 @@ class BaseGameEntityMkII;
 
 // -----------------------------------------------------------------------------
 
-class EnterMineAndDigForNuggetState
+class WorkAtSaloonState
 	: public StateInterface<BaseGameEntityMkII>
 {
 public:
-	EnterMineAndDigForNuggetState(const EnterMineAndDigForNuggetState&) = delete;
-	void  operator=(const EnterMineAndDigForNuggetState&) = delete;
+	WorkAtSaloonState(const WorkAtSaloonState&) = delete;
+	void  operator=(const WorkAtSaloonState&) = delete;
 
-	static EnterMineAndDigForNuggetState& getInstance();
+	static WorkAtSaloonState& getInstance();
 
 private:
-	EnterMineAndDigForNuggetState() {}
+	WorkAtSaloonState() {}
 
 	// StateInterface
 	virtual void enter(BaseGameEntityMkII* pEntity);
@@ -28,8 +28,7 @@ private:
 	virtual void exit(BaseGameEntityMkII* pEntity);
 	// ~StateInterface
 };
-
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-#endif // !EnterMineAndDigForNuggetState_H
+#endif // !WorkAtSaloonState_H

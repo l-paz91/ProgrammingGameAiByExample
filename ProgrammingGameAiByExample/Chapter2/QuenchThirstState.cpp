@@ -22,7 +22,7 @@ QuenchThirstState& QuenchThirstState::getInstance()
 
 // -----------------------------------------------------------------------------
 
-void QuenchThirstState::enter(Miner* pEntity)
+void QuenchThirstState::enter(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{
@@ -36,7 +36,7 @@ void QuenchThirstState::enter(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void QuenchThirstState::execute(Miner* pEntity)
+void QuenchThirstState::execute(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{
@@ -57,7 +57,7 @@ void QuenchThirstState::execute(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void QuenchThirstState::exit(Miner* pEntity)
+void QuenchThirstState::exit(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{

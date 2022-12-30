@@ -23,7 +23,7 @@ EnterMineAndDigForNuggetState& EnterMineAndDigForNuggetState::getInstance()
 
 // -----------------------------------------------------------------------------
 
-void EnterMineAndDigForNuggetState::enter(Miner* pEntity)
+void EnterMineAndDigForNuggetState::enter(BaseGameEntityMkII* pEntity)
 {
 	// if the miner is not already located at the gold mine, then change
 	// location to the gold mine
@@ -41,7 +41,7 @@ void EnterMineAndDigForNuggetState::enter(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void EnterMineAndDigForNuggetState::execute(Miner* pEntity)
+void EnterMineAndDigForNuggetState::execute(BaseGameEntityMkII* pEntity)
 {
 	// the miner digs for gold until he is carrying in excess of MaxNuggets
 	// if he gets thirsty during his digging he stops work and changes state
@@ -70,7 +70,7 @@ void EnterMineAndDigForNuggetState::execute(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void EnterMineAndDigForNuggetState::exit(Miner* pEntity)
+void EnterMineAndDigForNuggetState::exit(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{

@@ -6,12 +6,12 @@
 //--INCLUDES--//
 #include "State.h"
 
-class Miner;
+class BaseGameEntityMkII;
 
 // -----------------------------------------------------------------------------
 
 class GoHomeAndSleepTilRestedState
-	: public StateInterface<Miner>
+	: public StateInterface<BaseGameEntityMkII>
 {
 public:
 	GoHomeAndSleepTilRestedState(const GoHomeAndSleepTilRestedState&) = delete;
@@ -23,9 +23,9 @@ private:
 	GoHomeAndSleepTilRestedState() {}
 
 	// StateInterface
-	virtual void enter(Miner* pEntity);
-	virtual void execute(Miner* pEntity);
-	virtual void exit(Miner* pEntity);
+	virtual void enter(BaseGameEntityMkII* pEntity);
+	virtual void execute(BaseGameEntityMkII* pEntity);
+	virtual void exit(BaseGameEntityMkII* pEntity);
 	// ~StateInterface
 };
 

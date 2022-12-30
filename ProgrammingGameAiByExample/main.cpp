@@ -15,12 +15,13 @@
 #include <windows.h>
 
 #include "Chapter2/Miner.h"
+#include "Chapter2/MinersWife.h"
 
 #include "std_lib_facilities.h"
 
 // -----------------------------------------------------------------------------
 
-void fct()
+void project1()
 {
 	Miner miner(PlayerEntities::eMINER_BOB);
 
@@ -28,7 +29,23 @@ void fct()
 	for (int i = 0; i < 20; ++i)
 	{
 		miner.update();
-		Sleep(800);
+		Sleep(500);
+	}
+}
+
+// -----------------------------------------------------------------------------
+
+void project2()
+{
+	Miner miner(PlayerEntities::eMINER_BOB);
+	MinersWife elsa(PlayerEntities::eELSA);
+
+	// simply run the miner through a few update calls
+	for (int i = 0; i < 20; ++i)
+	{
+		//miner.update();
+		elsa.update();
+		Sleep(500);
 	}
 }
 
@@ -36,7 +53,7 @@ void fct()
 
 int main()
 {
-	fct();
+	project2();
 
 	cout << "\n\n";
 	cin.clear();

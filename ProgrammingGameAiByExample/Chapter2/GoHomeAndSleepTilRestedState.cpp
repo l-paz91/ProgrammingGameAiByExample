@@ -22,7 +22,7 @@ GoHomeAndSleepTilRestedState& GoHomeAndSleepTilRestedState::getInstance()
 
 // -----------------------------------------------------------------------------
 
-void GoHomeAndSleepTilRestedState::enter(Miner* pEntity)
+void GoHomeAndSleepTilRestedState::enter(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{
@@ -36,7 +36,7 @@ void GoHomeAndSleepTilRestedState::enter(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void GoHomeAndSleepTilRestedState::execute(Miner* pEntity)
+void GoHomeAndSleepTilRestedState::execute(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{
@@ -57,7 +57,7 @@ void GoHomeAndSleepTilRestedState::execute(Miner* pEntity)
 
 // -----------------------------------------------------------------------------
 
-void GoHomeAndSleepTilRestedState::exit(Miner* pEntity)
+void GoHomeAndSleepTilRestedState::exit(BaseGameEntityMkII* pEntity)
 {
 	if (Miner* miner = dynamic_cast<Miner*>(pEntity))
 	{

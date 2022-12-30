@@ -45,6 +45,18 @@
     <ClCompile Include="Chapter2\QuenchThirstState.cpp">
       <Filter>Source Files\Chapter2</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter2\MinersWife.cpp">
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter2\WorkAtSaloonState.cpp">
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter2\DoShotsState.cpp">
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter2\MinersWifeGlobalState.cpp">
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="std_lib_facilities.h">
@@ -87,6 +99,18 @@
       <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\QuenchThirstState.h">
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\MinersWife.h">
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\WorkAtSaloonState.h">
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\DoShotsState.h">
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\MinersWifeGlobalState.h">
       <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
   </ItemGroup>

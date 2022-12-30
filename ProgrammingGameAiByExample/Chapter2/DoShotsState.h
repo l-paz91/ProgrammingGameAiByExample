@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-#ifndef EnterMineAndDigForNuggetState_H
-#define EnterMineAndDigForNuggetState_H
+#ifndef DoShotsState_H
+#define DoShotsState_H
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
@@ -10,17 +10,17 @@ class BaseGameEntityMkII;
 
 // -----------------------------------------------------------------------------
 
-class EnterMineAndDigForNuggetState
+class DoShotsState
 	: public StateInterface<BaseGameEntityMkII>
 {
 public:
-	EnterMineAndDigForNuggetState(const EnterMineAndDigForNuggetState&) = delete;
-	void  operator=(const EnterMineAndDigForNuggetState&) = delete;
+	DoShotsState(const DoShotsState&) = delete;
+	void  operator=(const DoShotsState&) = delete;
 
-	static EnterMineAndDigForNuggetState& getInstance();
+	static DoShotsState& getInstance();
 
 private:
-	EnterMineAndDigForNuggetState() {}
+	DoShotsState() {}
 
 	// StateInterface
 	virtual void enter(BaseGameEntityMkII* pEntity);
@@ -32,4 +32,4 @@ private:
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-#endif // !EnterMineAndDigForNuggetState_H
+#endif // !DoShotsState_H

@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-#ifndef EnterMineAndDigForNuggetState_H
-#define EnterMineAndDigForNuggetState_H
+#ifndef MinersWifeGlobalState_H
+#define MinersWifeGlobalState_H
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
@@ -10,17 +10,17 @@ class BaseGameEntityMkII;
 
 // -----------------------------------------------------------------------------
 
-class EnterMineAndDigForNuggetState
+class MinersWifeGlobalState
 	: public StateInterface<BaseGameEntityMkII>
 {
 public:
-	EnterMineAndDigForNuggetState(const EnterMineAndDigForNuggetState&) = delete;
-	void  operator=(const EnterMineAndDigForNuggetState&) = delete;
+	MinersWifeGlobalState(const MinersWifeGlobalState&) = delete;
+	void  operator=(const MinersWifeGlobalState&) = delete;
 
-	static EnterMineAndDigForNuggetState& getInstance();
+	static MinersWifeGlobalState& getInstance();
 
 private:
-	EnterMineAndDigForNuggetState() {}
+	MinersWifeGlobalState() {}
 
 	// StateInterface
 	virtual void enter(BaseGameEntityMkII* pEntity);
@@ -32,4 +32,4 @@ private:
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-#endif // !EnterMineAndDigForNuggetState_H
+#endif // !MinersWifeGlobalState_H
