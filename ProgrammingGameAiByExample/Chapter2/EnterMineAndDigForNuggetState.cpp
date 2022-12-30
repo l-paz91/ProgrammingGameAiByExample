@@ -4,12 +4,22 @@
 #include <iostream>
 
 #include "Miner.h"
+#include "QuenchThirstState.h"
+#include "VisitBankAndDepositGoldState.h"
 
 #include "EnterMineAndDigForNuggetState.h"
 
 // -----------------------------------------------------------------------------
 
 using namespace std;
+
+// -----------------------------------------------------------------------------
+
+EnterMineAndDigForNuggetState& EnterMineAndDigForNuggetState::getInstance()
+{
+	static EnterMineAndDigForNuggetState instance;
+	return instance;
+}
 
 // -----------------------------------------------------------------------------
 
@@ -47,13 +57,13 @@ void EnterMineAndDigForNuggetState::execute(Miner* pEntity)
 		// if enough gold mined, go and put it in the bank
 		if (miner->pocketsFull())
 		{
-			//miner->changeState(VisitBankAndDepositGoldState::getInstance());
+			miner->getStateMachine()->changeState(reinterpret_cast<StateInterface<BaseGameEntityMkII>*>(&VisitBankAndDepositGoldState::getInstance()));
 		}
 
 		// if thirsty go and get a whiskey
 		if (miner->isThirsty())
 		{
-			//miner->changeState(QuenchThirstState::getInstance());
+			miner->getStateMachine()->changeState(reinterpret_cast<StateInterface<BaseGameEntityMkII>*>(&QuenchThirstState::getInstance()));
 		}
 	}
 }

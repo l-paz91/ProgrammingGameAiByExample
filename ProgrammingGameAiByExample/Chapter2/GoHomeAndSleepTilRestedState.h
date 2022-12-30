@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-#ifndef EnterMineAndDigForNuggetState_H
-#define EnterMineAndDigForNuggetState_H
+#ifndef GoHomeAndSleepTilRestedState_H
+#define GoHomeAndSleepTilRestedState_H
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
@@ -10,17 +10,17 @@ class Miner;
 
 // -----------------------------------------------------------------------------
 
-class EnterMineAndDigForNuggetState
+class GoHomeAndSleepTilRestedState
 	: public StateInterface<Miner>
 {
 public:
-	EnterMineAndDigForNuggetState(const EnterMineAndDigForNuggetState&) = delete;
-	void  operator=(const EnterMineAndDigForNuggetState&) = delete;
+	GoHomeAndSleepTilRestedState(const GoHomeAndSleepTilRestedState&) = delete;
+	void  operator=(const GoHomeAndSleepTilRestedState&) = delete;
 
-	static EnterMineAndDigForNuggetState& getInstance();
+	static GoHomeAndSleepTilRestedState& getInstance();
 
 private:
-	EnterMineAndDigForNuggetState() {}
+	GoHomeAndSleepTilRestedState() {}
 
 	// StateInterface
 	virtual void enter(Miner* pEntity);
@@ -32,4 +32,4 @@ private:
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-#endif // !EnterMineAndDigForNuggetState_H
+#endif // !GoHomeAndSleepTilRestedState_H

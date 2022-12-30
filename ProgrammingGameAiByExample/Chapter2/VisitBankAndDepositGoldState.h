@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-#ifndef EnterMineAndDigForNuggetState_H
-#define EnterMineAndDigForNuggetState_H
+#ifndef VisitBankAndDepositGoldState_H
+#define VisitBankAndDepositGoldState_H
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
@@ -10,17 +10,17 @@ class Miner;
 
 // -----------------------------------------------------------------------------
 
-class EnterMineAndDigForNuggetState
+class VisitBankAndDepositGoldState
 	: public StateInterface<Miner>
 {
 public:
-	EnterMineAndDigForNuggetState(const EnterMineAndDigForNuggetState&) = delete;
-	void  operator=(const EnterMineAndDigForNuggetState&) = delete;
+	VisitBankAndDepositGoldState(const VisitBankAndDepositGoldState&) = delete;
+	void  operator=(const VisitBankAndDepositGoldState&) = delete;
 
-	static EnterMineAndDigForNuggetState& getInstance();
+	static VisitBankAndDepositGoldState& getInstance();
 
 private:
-	EnterMineAndDigForNuggetState() {}
+	VisitBankAndDepositGoldState() {}
 
 	// StateInterface
 	virtual void enter(Miner* pEntity);
@@ -32,4 +32,4 @@ private:
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-#endif // !EnterMineAndDigForNuggetState_H
+#endif // !VisitBankAndDepositGoldState_H

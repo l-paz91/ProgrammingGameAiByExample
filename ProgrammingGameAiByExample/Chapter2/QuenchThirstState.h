@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-#ifndef EnterMineAndDigForNuggetState_H
-#define EnterMineAndDigForNuggetState_H
+#ifndef QuenchThirstState_H
+#define QuenchThirstState_H
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
@@ -10,17 +10,17 @@ class Miner;
 
 // -----------------------------------------------------------------------------
 
-class EnterMineAndDigForNuggetState
+class QuenchThirstState
 	: public StateInterface<Miner>
 {
 public:
-	EnterMineAndDigForNuggetState(const EnterMineAndDigForNuggetState&) = delete;
-	void  operator=(const EnterMineAndDigForNuggetState&) = delete;
+	QuenchThirstState(const QuenchThirstState&) = delete;
+	void  operator=(const QuenchThirstState&) = delete;
 
-	static EnterMineAndDigForNuggetState& getInstance();
+	static QuenchThirstState& getInstance();
 
 private:
-	EnterMineAndDigForNuggetState() {}
+	QuenchThirstState() {}
 
 	// StateInterface
 	virtual void enter(Miner* pEntity);
@@ -28,8 +28,7 @@ private:
 	virtual void exit(Miner* pEntity);
 	// ~StateInterface
 };
-
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-#endif // !EnterMineAndDigForNuggetState_H
+#endif // !QuenchThirstState_H

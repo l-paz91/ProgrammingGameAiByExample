@@ -22,9 +22,9 @@ public:
 	{}
 
 	// use the methods to initialise the FSM
-	void setCurrentState(StateInterface<T*> pState) { mCurrentState = pState; }
-	void setPreviousState(StateInterface<T*> pState) { mPreviousState = pState; }
-	void setGlobalState(StateInterface<T*> pState) { mGlobalState = pState; }
+	void setCurrentState(StateInterface<T>* pState) { mCurrentState = pState; }
+	void setPreviousState(StateInterface<T>* pState) { mPreviousState = pState; }
+	void setGlobalState(StateInterface<T>* pState) { mGlobalState = pState; }
 
 	// call to update the FSM
 	void update() const 

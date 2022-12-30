@@ -144,8 +144,14 @@
   <ItemGroup>
     <ClCompile Include="Chapter2\BaseGameEntityMkII.cpp" />
     <ClCompile Include="Chapter2\EnterMineAndDigForNuggetState.cpp" />
+    <ClCompile Include="Chapter2\GoHomeAndSleepTilRestedState.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Chapter2\Miner.cpp" />
     <ClCompile Include="Chapter2\PlayerEntities.cpp" />
+    <ClCompile Include="Chapter2\QuenchThirstState.cpp" />
+    <ClCompile Include="Chapter2\VisitBankAndDepositGoldState.cpp" />
     <ClCompile Include="main.cpp">
       <SubType>
       </SubType>
@@ -157,11 +163,20 @@
     <ClInclude Include="Chapter2\BaseObject.h" />
     <ClInclude Include="Chapter2\EnterMineAndDigForNuggetState.h" />
     <ClInclude Include="Chapter2\EntityStateMachine.h" />
+    <ClInclude Include="Chapter2\GoHomeAndSleepTilRestedState.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Chapter2\LocationTypes.h" />
     <ClInclude Include="Chapter2\Miner.h" />
     <ClInclude Include="Chapter2\PlayerEntities.h" />
+    <ClInclude Include="Chapter2\QuenchThirstState.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Chapter2\State.h" />
     <ClInclude Include="Chapter2\UniqueIdManager.h" />
+    <ClInclude Include="Chapter2\VisitBankAndDepositGoldState.h" />
     <ClInclude Include="std_lib_facilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

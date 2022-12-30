@@ -1,11 +1,13 @@
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
+#include "GoHomeAndSleepTilRestedState.h"
+
 #include "Miner.h"
 
 // -----------------------------------------------------------------------------
 
-Miner::Miner()
+Miner::Miner(PlayerEntities pPlayerEntityType)
 	: mComfortLevel(5)
 	, mMaxNuggets(3)
 	, mThirstThreshold(5)
@@ -15,10 +17,9 @@ Miner::Miner()
 	, mThirst(0)
 	, mFatigue(0)
 	, mLocation(LocationTypes::eDEFAULT)
-	, mPlayerType(PlayerEntities::eMINER_BOB)
+	, mPlayerType(pPlayerEntityType)
 {
-	//getStateMachine()->setCurrentState(GoHomeAndSleepTillRestedState::getInstance());
-	//getStateMachine()->setGlobalState(MinorGlobalState::getInstance());
+	getStateMachine()->setCurrentState(reinterpret_cast<StateInterface<BaseGameEntityMkII>*>(&GoHomeAndSleepTilRestedState::getInstance()));
 }
 
 // -----------------------------------------------------------------------------
@@ -32,9 +33,27 @@ void Miner::update()
 
 // -----------------------------------------------------------------------------
 
+void Miner::setGoldCarried(int pValue)
+{
+	mGoldCarried = pValue;
+}
+
+// -----------------------------------------------------------------------------
+
 void Miner::increaseGoldCarried(int pAddition)
 {
 	mGoldCarried += pAddition;
+}
+
+// -----------------------------------------------------------------------------
+
+void Miner::increaseMoneyInBank(int pAddition)
+{
+	mMoneyInBank += pAddition;
+	if (mMoneyInBank < 0)
+	{
+		mMoneyInBank = 0;
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -70,6 +89,21 @@ bool Miner::pocketsFull() const
 bool Miner::isThirsty() const
 {
 	return mThirst >= mThirstThreshold;
+}
+
+// -----------------------------------------------------------------------------
+
+bool Miner::isFatigued() const
+{
+	return mFatigue > mTirednessThreshold;
+}
+
+// -----------------------------------------------------------------------------
+
+void Miner::buyAndDrinkAWhiskey()
+{
+	mThirst = 0;
+	mMoneyInBank -= 2;
 }
 
 // -----------------------------------------------------------------------------

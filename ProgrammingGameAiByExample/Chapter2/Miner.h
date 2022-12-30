@@ -16,22 +16,29 @@ class Miner
 public:
 	typedef BaseGameEntityMkII Super;
 
-	Miner();
+	Miner(PlayerEntities pPlayerEntityType);
 	virtual ~Miner() {}
 
 	// BaseGameEntityMkII
 	virtual void update() override;
 	// ~BaseGameEntityMkII
 
+	void setGoldCarried(int pValue);
 	void increaseGoldCarried(int pAddition);
+	void increaseMoneyInBank(int pAddition);
 	void incrementFatigue();
 	void decrementFatigue();
 	void SetLocation(const LocationTypes pNewLocation);
 	bool pocketsFull() const;
 	bool isThirsty() const;
+	bool isFatigued() const;
+	void buyAndDrinkAWhiskey();
 
 	std::string getName() { return PlayerEntitiesHelpers::getNameOfEntity(mPlayerType); }
 
+	const int getGoldCarried() const { return mGoldCarried; }
+	const int getMoneyInBank() const { return mMoneyInBank; }
+	const int getComfortLevel() const { return mComfortLevel; }
 	const LocationTypes getLocation() const { return mLocation; }
 	const PlayerEntities getPlayerType() const { return mPlayerType; }
 private:

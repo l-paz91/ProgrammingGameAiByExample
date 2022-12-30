@@ -13,22 +13,37 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Chapter2">
+      <UniqueIdentifier>{bc730d46-b80b-4759-b217-64a6c00cf59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter2">
+      <UniqueIdentifier>{1727f797-cd88-405e-b3a1-02c51a259e48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Chapter2\BaseGameEntityMkII.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="Chapter2\EnterMineAndDigForNuggetState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="Chapter2\Miner.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="Chapter2\PlayerEntities.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter2\VisitBankAndDepositGoldState.cpp">
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter2\GoHomeAndSleepTilRestedState.cpp">
+      <Filter>Source Files\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter2\QuenchThirstState.cpp">
+      <Filter>Source Files\Chapter2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,34 +51,43 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\BaseGameEntity.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\BaseGameEntityMkII.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\BaseObject.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\EnterMineAndDigForNuggetState.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\EntityStateMachine.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\LocationTypes.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\Miner.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\PlayerEntities.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\State.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
     <ClInclude Include="Chapter2\UniqueIdManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\VisitBankAndDepositGoldState.h">
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\GoHomeAndSleepTilRestedState.h">
+      <Filter>Header Files\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter2\QuenchThirstState.h">
+      <Filter>Header Files\Chapter2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

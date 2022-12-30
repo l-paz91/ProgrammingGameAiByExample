@@ -12,8 +12,9 @@
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
-#include "Chapter2/BaseGameEntityMkII.h"
-#include "Chapter2/UniqueIdManager.h"
+#include <windows.h>
+
+#include "Chapter2/Miner.h"
 
 #include "std_lib_facilities.h"
 
@@ -21,13 +22,14 @@
 
 void fct()
 {
-	for (int i = 0; i < 10; ++i)
-	{
-		int id = UniqueIdManager::getUniqueID();
-		cout << "Id" << i << ": " << id << '\n';
-	}
+	Miner miner(PlayerEntities::eMINER_BOB);
 
-	BaseGameEntityMkII ref;
+	// simply run the miner through a few update calls
+	for (int i = 0; i < 20; ++i)
+	{
+		miner.update();
+		Sleep(800);
+	}
 }
 
 // -----------------------------------------------------------------------------
