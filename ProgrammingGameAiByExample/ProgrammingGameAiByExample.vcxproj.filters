@@ -18,16 +18,16 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BaseGameEntityMkII.cpp">
+    <ClCompile Include="Chapter2\BaseGameEntityMkII.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Miner.cpp">
+    <ClCompile Include="Chapter2\EnterMineAndDigForNuggetState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EnterMineAndDigForNuggetState.cpp">
+    <ClCompile Include="Chapter2\Miner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerEntities.cpp">
+    <ClCompile Include="Chapter2\PlayerEntities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,34 +35,34 @@
     <ClInclude Include="std_lib_facilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BaseGameEntity.h">
+    <ClInclude Include="Chapter2\BaseGameEntity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BaseGameEntityMkII.h">
+    <ClInclude Include="Chapter2\BaseGameEntityMkII.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UniqueIdManager.h">
+    <ClInclude Include="Chapter2\BaseObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BaseObject.h">
+    <ClInclude Include="Chapter2\EnterMineAndDigForNuggetState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerEntities.h">
+    <ClInclude Include="Chapter2\EntityStateMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Miner.h">
+    <ClInclude Include="Chapter2\LocationTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LocationTypes.h">
+    <ClInclude Include="Chapter2\Miner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="State.h">
+    <ClInclude Include="Chapter2\PlayerEntities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EnterMineAndDigForNuggetState.h">
+    <ClInclude Include="Chapter2\State.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EntityStateMachine.h">
+    <ClInclude Include="Chapter2\UniqueIdManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

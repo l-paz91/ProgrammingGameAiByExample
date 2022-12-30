@@ -25,7 +25,6 @@ BaseGameEntityMkII::~BaseGameEntityMkII()
 		delete mStateMachine;
 	}
 }
-}
 
 // -----------------------------------------------------------------------------
 

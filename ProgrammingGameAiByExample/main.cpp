@@ -12,8 +12,8 @@
 // -----------------------------------------------------------------------------
 
 //--INCLUDES--//
-#include "BaseGameEntityMkII.h"
-#include "UniqueIdManager.h"
+#include "Chapter2/BaseGameEntityMkII.h"
+#include "Chapter2/UniqueIdManager.h"
 
 #include "std_lib_facilities.h"
 

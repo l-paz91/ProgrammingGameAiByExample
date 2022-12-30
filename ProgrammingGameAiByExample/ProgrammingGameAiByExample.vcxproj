@@ -72,6 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\C++\Projects\ProgrammingGameAiByExample\ProgrammingGameAiByExample\Chapter2;$(IncludePath)</IncludePath>
+    <PublicIncludeDirectories>E:\C++\Projects\ProgrammingGameAiByExample\ProgrammingGameAiByExample\Chapter2;$(PublicIncludeDirectories)</PublicIncludeDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -88,6 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\C++\Projects\ProgrammingGameAiByExample\ProgrammingGameAiByExample\Chapter2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,68 +142,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BaseGameEntityMkII.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="EnterMineAndDigForNuggetState.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
+    <ClCompile Include="Chapter2\BaseGameEntityMkII.cpp" />
+    <ClCompile Include="Chapter2\EnterMineAndDigForNuggetState.cpp" />
+    <ClCompile Include="Chapter2\Miner.cpp" />
+    <ClCompile Include="Chapter2\PlayerEntities.cpp" />
     <ClCompile Include="main.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Miner.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="PlayerEntities.cpp">
       <SubType>
       </SubType>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseGameEntity.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="BaseGameEntityMkII.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="BaseObject.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="EnterMineAndDigForNuggetState.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="EntityStateMachine.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="LocationTypes.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Miner.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="PlayerEntities.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="State.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="UniqueIdManager.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
+    <ClInclude Include="Chapter2\BaseGameEntity.h" />
+    <ClInclude Include="Chapter2\BaseGameEntityMkII.h" />
+    <ClInclude Include="Chapter2\BaseObject.h" />
+    <ClInclude Include="Chapter2\EnterMineAndDigForNuggetState.h" />
+    <ClInclude Include="Chapter2\EntityStateMachine.h" />
+    <ClInclude Include="Chapter2\LocationTypes.h" />
+    <ClInclude Include="Chapter2\Miner.h" />
+    <ClInclude Include="Chapter2\PlayerEntities.h" />
+    <ClInclude Include="Chapter2\State.h" />
+    <ClInclude Include="Chapter2\UniqueIdManager.h" />
     <ClInclude Include="std_lib_facilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
